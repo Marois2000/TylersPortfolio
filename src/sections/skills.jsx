@@ -24,9 +24,9 @@ const Skills = () => {
     
 
     return (
-        <div className="w-full h-[100vh] bg-gradient-to-tr from-darkblue to-lightblue from-80%" id="skills">
+        <div className="w-full bg-gradient-to-tr from-darkblue to-lightblue from-80% pb-48" id="skills">
             <div className="w-full">
-                <h1 className="p-10 font-rubik text-7xl text-lightwarm">My Skills</h1>
+                <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-4xl">My Skills</h1>
             </div>
 
             <div className="w-full flex justify-center items-center mt-10 h-[70%] " ref={skills}>
@@ -60,11 +60,11 @@ const Skills = () => {
 }
 
 const Skill = ({ image, text}) => {
-    const [style, setStyle] = useState("flex gap-3 items-center opacity-0");
+    const [style, setStyle] = useState("flex gap-3 items-center opacity-0 max-md:gap-1");
 
     useEffect(() => {
         setTimeout(() => {
-            setStyle("flex gap-3 items-center w-full animate-slide-in-left");
+            setStyle("flex gap-3 items-center w-full animate-slide-in-left max-md:gap-1");
             clearTimeout();
         }, Math.random() * 1000);
     });
@@ -72,7 +72,7 @@ const Skill = ({ image, text}) => {
     return(
         <div className={style}>
             <img src={image} />
-            <h2 className="text-2xl font-exo text-lightwarm">{text}</h2>
+            <h2 className="text-2xl font-exo text-lightwarm max-md:text-lg">{text}</h2>
         </div>
     )
 }

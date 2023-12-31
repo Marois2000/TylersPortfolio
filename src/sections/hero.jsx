@@ -11,16 +11,16 @@ const Hero = () => {
 
 
     return (
-        <div className="bg-darkblue h-[100vh] w-full overflow-x-hidden" id="hero">
+        <div className="bg-darkblue w-full overflow-x-hidden pt-64 pb-64 max-sm:py-10 "  id="hero">
             <div className="flex justify-evenly items-center h-full max-lg:flex-col-reverse max-lg:justify-center">
                 <div className={detailsInView ? "flex flex-col justify-start items-start gap-5 w-[30%] animate-slide-in-left max-lg:mt-10 max-lg:w-[70%] max-lg:items-center" : "flex flex-col justify-start items-start gap-5 w-[30%] max-lg:mt-10 max-lg:w-[70%] max-lg:items-center"} ref={details}>
-                    <h1 className="text-8xl text-lightwarm font-rubik max-lg:text-center max-lg:hidden">Hello!</h1>
-                    <h2 className="text-5xl text-lightwarm font-exo max-lg:text-center">My Name is Tyler Marois</h2>
-                    <h2 className="text-3xl text-lightwarm font-exo max-lg:text-center">I am aspiring to become a versatile Full Stack Developer</h2>
+                    <h1 className="text-8xl text-lightwarm font-rubik max-lg:text-center max-lg:hidden max-sm:text-6xl">Hello!</h1>
+                    <h2 className="text-5xl text-lightwarm font-exo max-lg:text-center max-sm:text-3xl">My Name is Tyler Marois</h2>
+                    <h2 className="text-3xl text-lightwarm font-exo max-lg:text-center max-sm:text-lg">I am aspiring to become a versatile Full Stack Developer</h2>
                 </div>
 
                 <div className={imageInView ? "w-[25%] max-md:w-[50%] max-xl:w-[30%]  animate-slide-in-right flex flex-col items-center" : "w-[25%] max-xl:w-[30%]"} ref={image}>
-                    <h1 className="text-8xl text-lightwarm font-rubik hidden max-lg:text-center max-lg:flex">Hello!</h1>
+                    <h1 className="text-8xl text-lightwarm font-rubik hidden max-lg:text-center max-lg:flex max-sm:text-6xl">Hello!</h1>
                     <img className="bg-lightwarm rounded-3xl overflow-hidden mt-10" src={Headshot} alt="" />
                 </div>
             </div>

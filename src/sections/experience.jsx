@@ -10,7 +10,7 @@ const Experience = () => {
     return (
         <div className="w-full bg-darkblue pb-96" id="experience">
             <div className="w-full">
-                <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-6xl">Experience</h1>
+                <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-4xl">Experience</h1>
             </div>
 
             <div className="flex justify-center items-center w-full flex-col mt-20">
@@ -54,8 +54,8 @@ const ExperienceTab = ({ title, bullets, dates, description, location }) => {
     const [openTab, setOpenTab] = useState("w-[75%] h-[0vh] rounded-b-lg bg-lightwarm duration-300");
 
     const toggle = () => {
-        if(!openTab.includes("[35vh]") || !openTab.includes("[50vh]")) {
-            setOpenTab("w-[75%] h-[35vh] rounded-b-lg bg-lightwarm duration-300 max-sm:h-[50vh]")
+        if(!openTab.includes("[35vh]") || !openTab.includes("[100vh]")) {
+            setOpenTab("w-[75%] h-[35vh] rounded-b-lg bg-lightwarm duration-300 max-md:h-[100vh]")
         } else {
             setOpenTab("w-[75%] h-[0vh] rounded-b-lg bg-lightwarm duration-300")
         }
@@ -64,14 +64,14 @@ const ExperienceTab = ({ title, bullets, dates, description, location }) => {
     return (
         <>
             <div className="bg-lightblue drop-shadow-2xl w-[80%] h-[10vh] rounded-lg justify-between items-center flex mt-5 max">
-                <h2 className="text-lightwarm text-4xl font-exo p-2 max-xl:text-2xl">{title}</h2>
-                <button onClick={toggle} className={!openTab.includes("[35vh]") || !openTab.includes("[50vh]") ? "hover:scale-125 duration-300 text-darkred p-4" : "hover:scale-125 duration-300 text-darkred p-4 rotate-180 "}><FontAwesomeIcon className="text-4xl " icon={faChevronDown}/></button>
+                <h2 className="text-lightwarm text-4xl font-exo p-2 max-xl:text-2xl max-md:text-lg">{title}</h2>
+                <button onClick={toggle} className={!openTab.includes("[35vh]") || !openTab.includes("[100vh]") ? "hover:scale-125 duration-300 text-darkred p-4" : "hover:scale-125 duration-300 text-darkred p-4 rotate-180 "}><FontAwesomeIcon className="text-4xl " icon={faChevronDown}/></button>
             </div>
             <div className={openTab}>
-                <div className={!openTab.includes("[35vh]") || !openTab.includes("[50vh]") ? "opacity-0 duration-300 h-[0px]" : "w-full duration-300 h-full"}>
+                <div className={!openTab.includes("[35vh]") || !openTab.includes("[100vh]") ? "opacity-0 duration-300 h-[0px]" : "w-full duration-300 h-full"}>
                     <div className="w-full justify-between p-2 items center flex gap-5">
-                        <h2 className="text-darkblue text-2xl font-exo max-md:text-lg">{dates}</h2>
-                        <h2 className="text-darkblue text-2xl font-exo max-md:text-lg">{location}</h2>
+                        <h2 className="text-darkblue text-2xl font-exo max-md:text-lg max-sm:text-sm">{dates}</h2>
+                        <h2 className="text-darkblue text-2xl font-exo max-md:text-lg max-sm:text-sm">{location}</h2>
                     </div>
 
                     <div className="w-full flex justify-between items-start p-2 mt-5 max-md:flex-col max-md:mt-0">

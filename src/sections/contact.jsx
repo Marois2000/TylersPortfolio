@@ -108,12 +108,12 @@ const Contact = () => {
         <CookiesProvider>
             <div className="w-full bg-darkblue overflow-x-hidden" id="contact">
                 <div className="w-full">
-                    <h1 className="p-10 font-rubik text-7xl text-lightwarm">Lets Connect!</h1>
+                    <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-4xl">Lets Connect!</h1>
                 </div>
 
                 <div className="w-full flex mt-10 justify-evenly max-lg:flex-col max-lg:justify-center items-center max-lg:gap-10">
                     <div className="w-[40%] max-lg:w-[80%]">
-                        <h1 className="underline font-semibold font-exo text-4xl text-lightwarm mb-10">Send Me a Message</h1>
+                        <h1 className="underline font-semibold font-exo text-4xl text-lightwarm mb-10 max-sm:text-3xl">Send Me a Message</h1>
                         <div>
                             <h2 className="font-exo text-2xl text-lightwarm">Full Name</h2>
                             <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name..." className="w-full bg-lightwarm text-darkblue rounded-md py-2 px-1" type="text" />

@@ -27,7 +27,7 @@ const About = () => {
     return (
         <div className="w-full bg-gradient-to-br from-darkblue to-lightblue from-80% overflow-x-hidden pb-64" id="about">
             <div className="w-full">
-                <h1 className="p-10 font-rubik text-7xl text-lightwarm">About Me</h1>
+                <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-4xl">About Me</h1>
             </div>
 
             <div className="w-full flex justify-evenly items-start mt-10 gap-10 max-lg:flex-col-reverse max-lg:items-center">

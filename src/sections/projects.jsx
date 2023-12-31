@@ -69,14 +69,14 @@ const Projects = () => {
     }
 
     return (
-        <div className="w-full h-[100vh] bg-gradient-to-b from-darkblue via-lightblue to-darkblue from-20% to-80% overflow-x-hidden">
+        <div className="w-full bg-gradient-to-b from-darkblue via-lightblue to-darkblue from-20% to-80% overflow-x-hidden">
             <div className="w-full">
-                <h1 className="p-10 font-rubik text-7xl text-lightwarm">Projects</h1>
+                <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-4xl">Projects</h1>
             </div>
 
-            <div className="flex justify-center items-center w-full h-[80%] flex-col mt-">
-                <div className="w-[95%] h-[100%] justify-between items-center flex">
-                    <button onClick={prevProject} className="hover:scale-125 duration-300 text-darkred"><FontAwesomeIcon className="text-7xl" icon={faChevronLeft} /></button>
+            <div className="flex justify-center items-center w-[95%] h-[80%] flex-col mt-10 overflow-hidden">
+                <div className="w-[95%] h-[100%] justify-center items-center flex mb-36">
+                    <button onClick={prevProject} className="hover:scale-125 duration-300 text-darkred"><FontAwesomeIcon className="text-7xl max-md:text-4xl" icon={faChevronLeft} /></button>
 
                     {project.map((slide, index) => {
                         return (
@@ -94,10 +94,10 @@ const Projects = () => {
                         
                     })}
 
-                    <button onClick={nextProject} className="hover:scale-125 duration-300 text-darkred"><FontAwesomeIcon className="text-7xl " icon={faChevronLeft} flip="horizontal"/></button>
+                    <button onClick={nextProject} className="hover:scale-125 duration-300 text-darkred"><FontAwesomeIcon className="text-7xl max-md:text-4xl" icon={faChevronLeft} flip="horizontal"/></button>
                 </div>
 
-                <div className="flex gap-10">
+                <div className="flex gap-10 mb-10">
                     {project.map((project, index) => {
                         return (
                             <button onClick={() => setActiveProject(index)}><FontAwesomeIcon key={index} className={`text-2xl  ${index == activeProject ? "scale-[200%] text-darkred" : "text-lightwarm"} duration-300`} icon={faCircle} /></button>
@@ -116,16 +116,16 @@ const ProjectCard = ({ title, description, timeline, skills, image, link }) => {
 
 
     return (
-        <div className={`flex items-start justify-center h-100% max-lg:flex-col`} id="projects">
-            <img className="w-[650px] max-xl:w-[550px] max-lg:w-[600px] max-md:w-[450px] max-sm:w-[350px] aspect-video z-10 translate-x-10 -translate-y-10 drop-shadow-2xl border-darkblue border-2 max-lg:translate-x-0 max-lg:-translate-y-0" src={image} />
+        <div className={`flex items-center justify-center h-100% max-lg:flex-col `} id="projects">
+            <img className="w-[650px] max-xl:w-[550px] max-lg:w-[600px] max-md:w-[450px] max-sm:w-[90%] aspect-video z-10 translate-x-10 -translate-y-10 drop-shadow-2xl border-darkblue border-2 max-lg:translate-x-0 max-lg:-translate-y-0" src={image} />
 
-            <div className="bg-lightwarm flex justify-start items-start flex-col w-[600px] h-[550px] max-lg:h-[400px] rounded-lg pl-20 max-md:w-[450px] max-lg:pl-3 max-sm:w-[350px] max-sm:h-[500px]">
+            <div className="bg-lightwarm flex justify-start items-start flex-col w-[600px] h-[550px] max-lg:h-[400px] rounded-lg pl-20 max-md:w-full max-lg:pl-3 max-sm:w-[90%] max-sm:h-[500px]">
                 <div className="h-[100%]">
                     <h2 className="text-darkblue text-4xl font-exo mt-2">{title}</h2>
                     <h3 className="text-darkblue text-xl font-exo mt-2">{timeline}</h3>
                     <div className="flex flex-col justify-center items-start">
                         <h3 className="text-darkblue text-xl font-exo mt-5 underline">Skills Required</h3>
-                        <div className=" flex items items-center justify-center gap-5 py-2 flex-wrap max-2xl:gap-1">
+                        <div className=" flex items items-center justify-center gap-5 py-2 flex-wrap max-2xl:gap-1 max-sm:hidden">
                             {skills.map((skill) => {
                                 return (
                                     <div className="rounded-lg px-2 py-3 bg-darkblue">
