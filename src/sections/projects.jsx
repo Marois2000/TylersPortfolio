@@ -69,7 +69,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="w-full bg-gradient-to-b from-darkblue via-lightblue to-darkblue from-20% to-80% overflow-x-hidden">
+        <div className="w-full bg-gradient-to-b from-darkblue via-lightblue to-darkblue from-20% to-80% overflow-x-hidden" id="projects">
             <div className="w-full">
                 <h1 className="p-10 font-rubik text-7xl text-lightwarm max-sm:text-4xl">Projects</h1>
             </div>
@@ -116,7 +116,7 @@ const ProjectCard = ({ title, description, timeline, skills, image, link }) => {
 
 
     return (
-        <div className={`flex items-center justify-center h-100% max-lg:flex-col `} id="projects">
+        <div className={`flex items-center justify-center h-100% max-lg:flex-col `} >
             <img className="w-[650px] max-xl:w-[550px] max-lg:w-[600px] max-md:w-[450px] max-sm:w-[90%] aspect-video z-10 translate-x-10 -translate-y-10 drop-shadow-2xl border-darkblue border-2 max-lg:translate-x-0 max-lg:-translate-y-0" src={image} />
 
             <div className="bg-lightwarm flex justify-start items-start flex-col w-[600px] h-[550px] max-lg:h-[400px] rounded-lg pl-20 max-md:w-full max-lg:pl-3 max-sm:w-[90%] max-sm:h-[500px]">

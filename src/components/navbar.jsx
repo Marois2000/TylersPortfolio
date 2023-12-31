@@ -91,7 +91,7 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            offset={-350}
+                            offset={0}
                         >
                             Projects
                         </Link>
@@ -169,7 +169,7 @@ const Menu = ({ open, setOpen }) => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            offset={-100}
+                            offset={0}
                         >
                             About
                         </Link>
@@ -183,7 +183,7 @@ const Menu = ({ open, setOpen }) => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            offset={-100}
+                            offset={0}
                         >
                             Skills
                         </Link>
@@ -197,7 +197,7 @@ const Menu = ({ open, setOpen }) => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            offset={-350}
+                            offset={0}
                         >
                             Projects
                         </Link>
@@ -211,7 +211,7 @@ const Menu = ({ open, setOpen }) => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            offset={-100}
+                            offset={0}
                         >
                             Experience
                         </Link>
@@ -225,7 +225,7 @@ const Menu = ({ open, setOpen }) => {
                             spy={true}
                             smooth={true}
                             duration={500}
-                            offset={-100}
+                            offset={0}
                         >
                             Contact
                         </Link>
