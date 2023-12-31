@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Exo2";
+  src: url(../fonts/Exo2-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/RubikDoodleShadow-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FDF0D5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #669BBC;
+}
+
