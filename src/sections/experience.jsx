@@ -54,8 +54,8 @@ const ExperienceTab = ({ title, bullets, dates, description, location }) => {
     const [openTab, setOpenTab] = useState("w-[75%] h-[0vh] rounded-b-lg bg-lightwarm duration-300");
 
     const toggle = () => {
-        if(!openTab.includes("[35vh]") || !openTab.includes("[100vh]")) {
-            setOpenTab("w-[75%] h-[35vh] rounded-b-lg bg-lightwarm duration-300 max-md:h-[100vh]")
+        if(!openTab.includes("[45vh]") || !openTab.includes("[100vh]")) {
+            setOpenTab("w-[75%] h-[45vh] rounded-b-lg bg-lightwarm duration-300 max-md:h-[100vh]")
         } else {
             setOpenTab("w-[75%] h-[0vh] rounded-b-lg bg-lightwarm duration-300")
         }
@@ -65,10 +65,10 @@ const ExperienceTab = ({ title, bullets, dates, description, location }) => {
         <>
             <div className="bg-lightblue drop-shadow-2xl w-[80%] h-[10vh] rounded-lg justify-between items-center flex mt-5 max">
                 <h2 className="text-lightwarm text-4xl font-exo p-2 max-xl:text-2xl max-md:text-lg">{title}</h2>
-                <button onClick={toggle} className={!openTab.includes("[35vh]") || !openTab.includes("[100vh]") ? "hover:scale-125 duration-300 text-darkred p-4" : "hover:scale-125 duration-300 text-darkred p-4 rotate-180 "}><FontAwesomeIcon className="text-4xl " icon={faChevronDown}/></button>
+                <button onClick={toggle} className={!openTab.includes("[45vh]") || !openTab.includes("[100vh]") ? "hover:scale-125 duration-300 text-darkred p-4" : "hover:scale-125 duration-300 text-darkred p-4 rotate-180 "}><FontAwesomeIcon className="text-4xl " icon={faChevronDown}/></button>
             </div>
             <div className={openTab}>
-                <div className={!openTab.includes("[35vh]") || !openTab.includes("[100vh]") ? "opacity-0 duration-300 h-[0px]" : "w-full duration-300 h-full"}>
+                <div className={!openTab.includes("[45vh]") || !openTab.includes("[100vh]") ? "opacity-0 duration-300 h-[0px]" : "w-full duration-300 h-full"}>
                     <div className="w-full justify-between p-2 items center flex gap-5">
                         <h2 className="text-darkblue text-2xl font-exo max-md:text-lg max-sm:text-sm">{dates}</h2>
                         <h2 className="text-darkblue text-2xl font-exo max-md:text-lg max-sm:text-sm">{location}</h2>
