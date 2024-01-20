@@ -18,7 +18,7 @@ const Experience = () => {
                     title="Website Administrator for Guarino Construction"
                     bullets={[<p><strong>Website Development:</strong> Built, designed, and currently maintain Guarino Construction's user-friendly website using Wix.</p>,
                         <p><strong>User Experience Optimization:</strong> Analyzed user data to enhance the online experience for visitors.</p>,
-                        <p><strong>Brand Presence Enhancement:</strong> Recognized for contributing to the improvement of Guarino Construction's online brand presence.</p>]} 
+                        <p><strong>Website Analytics:</strong>The recent enhancements to the website have led to remarkable results, with site sessions experiencing a substantial 90% increase and unique viewers surging by an impressive 96%.</p>]} 
                     dates="May 2023 - Present"
                     description="Served as the Website Administrator for Guarino Construction in a remote capacity. In this role, I've taken charge of building and designing the company's website on Wix, ensuring it remains user-friendly and visually appealing. By analyzing user data, I've actively worked to optimize the online experience, contributing to the overall enhancement of Guarino Construction's digital brand presence."
                     location="Remote"
