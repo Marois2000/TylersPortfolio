@@ -20,7 +20,7 @@ const Projects = () => {
         {
             title: "ARPICE",
             timeline: "October 2023 - December 2023",
-            description: "My team and I built and constructed a robot that can play chess. We created our own chess AI and built our own mechanical gantry and claw system to pick up and move the pieces. \n We were honored to have Plymouth State University recognizing the impact of this project and sharing it with the world.",
+            description: "My team and I built and constructed a robot that can play chess. We created our own chess AI and built our own mechanical gantry and claw system to pick up and move the pieces. \n We were honored to have Plymouth State University recognize the impact of this project and sharing it with the world.",
             skills: ["Arduino", "Raspberry Pi", "Python", "AI"],
             link: "https://youtu.be/Yjk6EQus9sY?si=0dIlmDOfLTwLkmJV",
             image: chess
