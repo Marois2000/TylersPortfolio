@@ -16,14 +16,15 @@ const Projects = () => {
     const [activeProject, setActiveProject] = useState(0);
     const [direction, setDirection] = useState("");
 
-    // title: "",
-    // timeline: "",
-    // description: "",
-    // skills: [],
-    // link: "",
-    // image: 
-
     const project = [
+        {
+            title: "ARPICE",
+            timeline: "October 2023 - December 2023",
+            description: "My team and I built and constructed a robot that can play chess. We created our own chess AI and built our own mechanical gantry and claw system to pick up and move the pieces. \n We were honored to have Plymouth State University recognizing the impact of this project and sharing it with the world.",
+            skills: ["Arduino", "Raspberry Pi", "Python", "AI"],
+            link: "https://youtu.be/Yjk6EQus9sY?si=0dIlmDOfLTwLkmJV",
+            image: chess
+        },
         {
             title: "Trendsync",
             timeline: "August 2023 - December 2023",
@@ -31,14 +32,6 @@ const Projects = () => {
             skills: ["React", "Node JS", "PostgreSQL", "Tailwind", "Linux VPS"],
             link: "https://github.com/Marois2000/TrendSync",
             image: trendsync
-        },
-        {
-            title: "Chess Playing Robot",
-            timeline: "October 2023 - December 2023",
-            description: "My team and I built and constructed a robot that can play chess. We created our own chess AI and built our own mechanical gantry and claw system to pick up and move the pieces. \n My team and I are also receiving recognition from our schools public relations team soon for this project.",
-            skills: ["Arduino", "Raspberry Pi", "Python", "AI"],
-            link: "https://www.youtube.com/watch?v=JjsQvisG6XE&ab_channel=Ty_Plays85",
-            image: chess
         },
         {
             title: "Moose Population Simulation",
